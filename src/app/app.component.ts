@@ -6,13 +6,6 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
 })
-export class AppComponent implements OnInit {
-  fotos: Object[] = [];
-  constructor(private fotoService: FotoService) {}
+export class AppComponent  {
 
-  ngOnInit(): void {
-    this.fotoService
-      .listFromUser("flavio")
-      .subscribe((photos) => (this.fotos = photos));
-  }
 }

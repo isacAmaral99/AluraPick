@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app.routing.module';
 import { FotoModule } from './fotos/fotos.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,7 @@ import { FotoComponent } from './fotos/foto/foto.component';
   imports: [
     BrowserModule,
     FotoModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
