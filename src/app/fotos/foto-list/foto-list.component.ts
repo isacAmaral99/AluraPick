@@ -1,3 +1,4 @@
+import { Foto } from './../foto/foto';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FotoService } from '../foto/foto.service';
@@ -9,7 +10,7 @@ import { FotoService } from '../foto/foto.service';
 })
 export class FotoListComponent implements OnInit {
 
-  fotos: Object[] = [];
+  fotos: Foto[] = [];
   constructor(
     private fotoService: FotoService,
     private activatedRoute: ActivatedRoute
