@@ -1,6 +1,6 @@
 <ul class="list-unstyled row ">
     <li *ngFor="let cols of rows" class="row">
-        <div *ngFor="let foto of cols" class="col-4">
+        <div *ngFor="let foto of cols" class="col-4" apDarkenOnHover brightness="90%">
             <ap-card [title]="foto.description">
 
                 <ap-foto [url]="foto.url"></ap-foto>
