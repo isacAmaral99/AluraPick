@@ -1,5 +1,5 @@
 import { AppRoutingModule } from './app.routing.module';
-import { FotoModule } from './fotos/fotos.module';
+import { FotosModule } from './fotos/fotos.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -14,7 +14,7 @@ import { FotoComponent } from './fotos/foto/foto.component';
   ],
   imports: [
     BrowserModule,
-    FotoModule,
+    FotosModule,
     AppRoutingModule
   ],
   providers: [],
